@@ -10,4 +10,8 @@ contract MyContract {
     function getPublicKey() public view returns (string memory) {
         return publicKey;
     }
+    
+    function updatePublicKey(string memory newPublicKey) public {
+        publicKey = newPublicKey;
+    }
 }
